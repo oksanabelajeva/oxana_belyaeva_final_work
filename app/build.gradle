@@ -17,11 +17,11 @@ repositories {
 }
 
 dependencies {
-    // Use JUnit test framework.
-    testImplementation 'junit:junit:4.13'
-
     // This dependency is used by the application.
     implementation 'com.google.guava:guava:29.0-jre'
+
+    // Use JUnit test framework.
+    testImplementation 'junit:junit:4.13'
 
     // https://mvnrepository.com/artifact/org.mockito/mockito-core
     testImplementation group: 'org.mockito', name: 'mockito-core', version: '3.9.0'
@@ -29,5 +29,5 @@ dependencies {
 
 application {
     // Define the main class for the application.
-    mainClass = 'oxana_belyaeva_final_work.App'
+    mainClass = 'lu.lv.finalwork.App'
 }
