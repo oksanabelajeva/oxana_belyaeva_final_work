@@ -1,9 +1,9 @@
 package lu.lv.finalwork.service;
 
-import lu.lv.finalwork.model.Product;
-import lu.lv.finalwork.model.ProductCategory;
+import lu.lv.finalwork.domain.Product;
+import lu.lv.finalwork.domain.ProductCategory;
 import lu.lv.finalwork.model.ProductInputData;
-import lu.lv.finalwork.repository.ProductRepository;
+import lu.lv.finalwork.repository.Repository;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.InjectMocks;
@@ -12,7 +12,6 @@ import org.mockito.junit.MockitoJUnitRunner;
 
 import java.math.BigDecimal;
 
-import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.verify;
 
 @RunWith(MockitoJUnitRunner.class)
@@ -22,7 +21,7 @@ public class ProductServiceTest {
     private ProductService victim;
 
     @Mock
-    private ProductRepository repositoryMock;
+    private Repository repositoryMock;
 
     @Test
     public void shouldCovertAndStoreProductData() {

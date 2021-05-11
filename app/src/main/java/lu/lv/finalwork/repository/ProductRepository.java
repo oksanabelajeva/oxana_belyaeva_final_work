@@ -1,14 +1,14 @@
 package lu.lv.finalwork.repository;
 
-import lu.lv.finalwork.model.Product;
+import lu.lv.finalwork.domain.Product;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-@org.springframework.stereotype.Repository
-public class ProductRepository implements Repository<Product> {
+//@org.springframework.stereotype.Repository
+class ProductRepository implements Repository<Product> {
 
     private Long idCounter = 0L;
     private Map<Long, Product> repository = new HashMap<>();
